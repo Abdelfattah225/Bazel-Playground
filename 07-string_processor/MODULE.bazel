@@ -1,0 +1,6 @@
+module(
+    name = "string_utils",
+    version = "1.0.0",
+)
+
+bazel_dep(name = "googletest" , version = "1.14.0.bcr.1")
