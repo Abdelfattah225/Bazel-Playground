@@ -455,6 +455,7 @@ bazel test //...  # Run all
 > 💡 **Remember:** Bazel = Fast, Scalable, Reproducible builds!
 
 
-![Bazel Mind Map](assets/bazel-mindmap.png)
+![Bazel Mind Map](assets/bazel_mindmap.png)
+
 ---
 
