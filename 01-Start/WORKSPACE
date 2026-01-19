@@ -1,0 +1,28 @@
+
+
+# add executable target for the workspace
+
+cc_binary(
+    name = "my_app",
+    srcs = ["main.cpp"]
+)
+# add link
+cc_library(
+    name="my_lib",
+    srcs=["helper.cpp"],
+    hdrs=["helper.hpp"],
+)
+
+# add link to target
+cc_binary(
+    name = "my_app",
+    srcs = ["main.cpp"],
+    deps = ["//lib:my_lib"],
+)
+
+# External Dependencies
+
+http_archive(
+    name = "gtest"
+    urls = ["https://github.com/..."],
+)
